@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:4200"}) // Could be set to an environment variable for dev/qa/regression/prod
+@CrossOrigin(origins = {"http://localhost:4200", "http://localhost:8080", "http://localhost:8000"}) // Could be set to an environment variable for dev/qa/regression/prod
 public class BookController {
 
     BookRepository bookRepository;

@@ -1,5 +1,5 @@
 # Use a container with JDK 11 installed
-FROM tartarus.hti-sys.com:4300/ubuntu-eoan-java
+FROM openjdk:11
 
 USER root
 

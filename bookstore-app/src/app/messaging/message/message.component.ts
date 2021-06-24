@@ -47,7 +47,6 @@ export class MessageComponent implements OnInit {
 
   sendName() {
     this.stompClient.send("/app/hello", {}, JSON.stringify({'name': $("#name").val()}));
-    //this.sockJS.send(JSON.stringify({'name': $("#name").val()}));
   }
 
   showGreeting(message: any) {
